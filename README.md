@@ -32,7 +32,7 @@ Output to the console the answer to the proposed math problem.
 ![alt text](https://github.com/jeremymaya/Code-401-Prework-Calculator/blob/master/Screenshots/Add.JPG "Add")
 
 #### Subtraction
-![alt text](https://github.com/jeremymaya/Code-401-Prework-Calculator/blob/master/Screenshots/Subtract.JPG "Subtraction")
+![alt text](https://github.com/jeremymaya/Code-401-Prework-Calculator/blob/master/Screenshots/Substract.JPG "Subtraction")
 
 #### Multiplication
 ![alt text](https://github.com/jeremymaya/Code-401-Prework-Calculator/blob/master/Screenshots/Multiply.JPG "Multiplication")
