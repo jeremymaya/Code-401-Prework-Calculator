@@ -12,94 +12,90 @@ namespace Calculator
                 displayMenu = MainMenu();
             }
         }
+        // This methods takes two input value and calls the selected method
         private static bool MainMenu()
         {
             Console.Clear();
+            Console.WriteLine("Enter two numbers you would like to work with below.");
+            Console.Write("Number One: ");
+            decimal a = Decimal.Parse(Console.ReadLine());
+            Console.Write("Number Two: ");
+            decimal b = Decimal.Parse(Console.ReadLine());
+            Console.WriteLine("");
+
+            Console.Clear();
+            Console.WriteLine("You entered {0} and {1}.", a, b);
+            Console.WriteLine("");
+
+            Console.WriteLine("Choose which function to run:");
             Console.WriteLine("1) Addition");
             Console.WriteLine("2) Subtraction");
             Console.WriteLine("3) Multiplication");
             Console.WriteLine("4) Division");
-            Console.WriteLine("5) Exit");
             Console.WriteLine("");
-            Console.Write("Choose an option: ");
+            Console.Write("Function: ");
             string result = Console.ReadLine();
 
             if (result == "1")
             {
-                Add();
-                return true;
+                Console.Clear();
+                Console.WriteLine("{0} + {1} = {2}", a, b, Add(a, b));
+                Console.WriteLine("");
+                Console.WriteLine("Press 'Enter' to end the calculator.");
+                Console.ReadLine();
+                return false;
             }
             else if (result == "2")
             {
-                Subtract();
-                return true;
+                Console.Clear();
+                Console.WriteLine("{0} - {1} = {2}", a, b, Subtract(a, b));
+                Console.WriteLine("");
+                Console.WriteLine("Please press 'Enter' to end the calculator.");
+                Console.ReadLine();
+                return false;
             }
             else if (result == "3")
             {
-                Multiply();
-                return true;
+                Console.Clear();
+                Console.WriteLine("{0} * {1} = {2}", a, b, Multiply(a, b));
+                Console.WriteLine("");
+                Console.WriteLine("Press 'Enter' to end the calculator.");
+                Console.ReadLine();
+                return false;
             }
             else if (result == "4")
             {
-                Divide();
-                return true;
+                Console.Clear();
+                Console.WriteLine("{0} / {1} = {2}", a, b, Divide(a, b));
+                Console.WriteLine("");
+                Console.WriteLine("Press 'Enter' to end the calculator.");
+                Console.ReadLine();
+                return false;
             }
             else
             {
                 return false;
             }
         }
-        private static void Add()
+        // This methods adds two parameters and returns a decimal value
+        private static decimal Add(decimal a, decimal b)
         {
-            Console.Clear();
-            Console.WriteLine("To add numbers, please enter two numbers below.");
-            Console.WriteLine("");
-            Console.Write("number a: ");
-            decimal a = Decimal.Parse(Console.ReadLine());
-            Console.Write("number b: ");
-            decimal b = Decimal.Parse(Console.ReadLine());
-            Console.WriteLine("");
-            Console.WriteLine("{0} + {1} = {2}", a, b, a + b);
-            Console.ReadLine();
+            return a + b;
         }
-        private static void Subtract()
+        // This methods substracts two parameters and returns a decimal value
+        private static decimal Subtract(decimal a, decimal b)
         {
-            Console.Clear();
-            Console.WriteLine("To subtract numbers, please enter two numbers below.");
-            Console.WriteLine("");
-            Console.Write("number a: ");
-            decimal a = Decimal.Parse(Console.ReadLine());
-            Console.Write("number b: ");
-            decimal b = Decimal.Parse(Console.ReadLine());
-            Console.WriteLine("");
-            Console.WriteLine("{0} - {1} = {2}", a, b, a - b);
-            Console.ReadLine();
+            return a - b;
         }
-        private static void Multiply()
+        // This methods multiplies two parameters and returns a decimal value
+        private static decimal Multiply(decimal a, decimal b)
         {
-            Console.Clear();
-            Console.WriteLine("To multiply numbers, please enter two numbers below.");
-            Console.WriteLine("");
-            Console.Write("number a: ");
-            decimal a = Decimal.Parse(Console.ReadLine());
-            Console.Write("number b: ");
-            decimal b = Decimal.Parse(Console.ReadLine());
-            Console.WriteLine("");
-            Console.WriteLine("{0} * {1} = {2}", a, b, a * b);
-            Console.ReadLine();
+            return a * b;
         }
-        private static void Divide()
+        // This methods divides two parameters and returns a decimal value
+        private static decimal Divide(decimal a, decimal b)
         {
-            Console.Clear();
-            Console.WriteLine("To divide numbers, please enter two numbers below.");
-            Console.WriteLine("");
-            Console.Write("number a: ");
-            decimal a = Decimal.Parse(Console.ReadLine());
-            Console.Write("number b: ");
-            decimal b = Decimal.Parse(Console.ReadLine());
-            Console.WriteLine("");
-            Console.WriteLine("{0} / {1} = {2}", a, b, a / b);
-            Console.ReadLine();
+            return a / b;
         }
     }
 }
