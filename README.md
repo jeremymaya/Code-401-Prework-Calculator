@@ -24,5 +24,21 @@ Output to the console the answer to the proposed math problem.
 ### Setup
 * This challenge will be completed via Visual Studio Community Version
 
+### Screenshots
+#### Menu
+![alt text](https://github.com/jeremymaya/Code-401-Prework-Calculator/blob/master/Screenshots/Menu.JPG "Menu")
+
+#### Addition
+![alt text](https://github.com/jeremymaya/Code-401-Prework-Calculator/blob/master/Screenshots/Add.JPG "Add")
+
+#### Subtraction
+![alt text](https://github.com/jeremymaya/Code-401-Prework-Calculator/blob/master/Screenshots/Subtract.JPG "Subtraction")
+
+#### Multiplication
+![alt text](https://github.com/jeremymaya/Code-401-Prework-Calculator/blob/master/Screenshots/Multiply.JPG "Multiplication")
+
+#### Division
+![alt text](https://github.com/jeremymaya/Code-401-Prework-Calculator/blob/master/Screenshots/Divide.JPG "Division")
+
 ### Reflections and Comments
 * C# is a type strict language that differs from JavaScript
